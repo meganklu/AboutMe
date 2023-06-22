@@ -11,6 +11,10 @@ body {
   background-color: #fef6e4;
 }
 
+/* main {
+  background-color: #f3d2c1;
+} */
+
 h1 {
   font-family: "Rammetto One";
   color: #001858;
@@ -36,12 +40,17 @@ a:active {
   color: #8BD3DD;
 }
 
+.fa {
+  text-decoration: none;
+  margin: 0 2%;
+}
+
 .holds-row {
   text-align: center;
 }
 
 svg {
-  width: 15vw;
+  width: 20vw;
   margin: 3% 5%;
 }
 
@@ -80,4 +89,24 @@ svg {
 
 .tooltip:hover svg {
   opacity: 50%;
+}
+
+#backDown {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 2%; /* Place the button at the bottom of the page */
+  right: 2%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #f582ae; /* Set a background color */
+  color: #001858; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 3%; /* Rounded corners */
+  font-size: 2vw; /* Increase font size */
+}
+
+#backDown:hover {
+  opacity: 50%
 }
