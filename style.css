@@ -1,0 +1,75 @@
+/* CSS files add styling rules to your content */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 1em;
+  background-color: #fef6e4;
+}
+
+h1 {
+  font-family: "Rammetto One";
+  color: #001858;
+  font-size: 12vw;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Rammetto One";
+  color: #001858;
+  font-size: 3vw;
+  text-align: center;
+}
+
+a {
+  color: #8bd3dd;
+}
+
+.holds-row {
+  text-align: center;
+}
+
+svg {
+  width: 15vw;
+  margin: 3% 5%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 0% 5%;
+}
+
+.tooltip-content {
+  display: none;
+  background-color: #f582ae;
+  width: 20vw;
+  font-size: 2vw;
+  color: #001858;
+  text-align: center;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 5vw;
+}
+
+.tooltip-content img {
+  height: 20vw;
+  width: 20vw;
+  object-fit: cover;
+  margin-top: 1%;
+}
+
+.tooltip:hover .tooltip-content {
+  display: inline;
+}
+
+.tooltip:hover svg {
+  opacity: 50%;
+}
