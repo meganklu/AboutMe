@@ -4,3 +4,5 @@ $(document).ready(function () {
         scrollTop: $('#intro').offset().top
     }, 'slow');
 });
+
+document.addEventListener("touchstart", function() {}, true);
