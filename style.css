@@ -129,7 +129,9 @@ a:active {
 }
 
 /* Animations */
-main, header, footer {
+header, 
+main, 
+footer {
   animation: fadeInAnimation ease-out 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
