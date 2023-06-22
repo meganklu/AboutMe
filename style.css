@@ -10,9 +10,6 @@ body {
   background-color: #fef6e4;
 }
 
-/* main {
-  background-color: #f3d2c1;
-} */
 main {
   background-image: url(assets/background.svg);
   background-size: 180%;
@@ -93,6 +90,7 @@ a:active {
   position: absolute;
   z-index: 1;
   top: 5vw;
+  left: 8.5vw;
 }
 
 .tooltip-content img {
@@ -113,8 +111,8 @@ a:active {
 #backDown {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 2%; /* Place the button at the bottom of the page */
-  right: 2%; /* Place the button 30px from the right */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -127,11 +125,11 @@ a:active {
 }
 
 #backDown:hover {
-  opacity: 50%
+  opacity: 50%;
 }
 
 /* Animations */
-body {
+main, header, footer {
   animation: fadeInAnimation ease-out 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;

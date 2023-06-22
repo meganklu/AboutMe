@@ -8,7 +8,7 @@ window.onload = function () {
 document.addEventListener("touchstart", function() {}, true);
 
 // Get the button:
-let downButton = document.getElementById("backDown");
+let backDown = document.getElementById("backDown");
 
 // If element out of viewport, show button
 window.onscroll = function() {
@@ -16,9 +16,9 @@ window.onscroll = function() {
   var bounding = introHold.getBoundingClientRect();
 
   if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
-    downButton.style.display = "none";
+    backDown.style.display = "none"; 
   } else {
-    downButton.style.display = "block";
+    backDown.style.display = "block";
   }
 };
 
